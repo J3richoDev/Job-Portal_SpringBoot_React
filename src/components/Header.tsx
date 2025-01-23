@@ -1,16 +1,17 @@
 import {IconBell, IconBrandCraft, IconSettings } from "@tabler/icons-react";
 import NavLinks from "./NavLinks";
 import { Avatar, Indicator } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 const Header =()=>{
     return <div>
-        <nav className="bg-dark-950 text-dark-100 px-4 h-20">
+        <nav className="bg-dark-950 text-dark-100 px-4 h-20 font-['poppins']">
             <div className="flex flex-wrap justify-between items-center h-full">
                 <div className="flex justify-start items-center">
-                    <a href="/" className="flex items-center justify-between text-mchite-400 gap-2">
+                    <Link to="/" className="flex items-center justify-between text-mchite-400 gap-2">
                         <IconBrandCraft className="w-10 h-10" stroke={2.5}/>
                         <span className="self-center text-4xl font-semibold whitespace-nowrap">Job Hain</span>
-                    </a>
+                    </Link>
                 </div>
                 <NavLinks/>
                 <div className="flex items-center gap-2 lg:order-2">

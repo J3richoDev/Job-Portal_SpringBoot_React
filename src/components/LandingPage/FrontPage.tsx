@@ -1,7 +1,7 @@
 import { Avatar, AvatarGroup, Button, TextInput } from "@mantine/core"
 import { IconSearch } from "@tabler/icons-react"
 
-const LandingPage = () => {
+const FrontPage = () => {
   return (
     <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
@@ -13,7 +13,7 @@ const LandingPage = () => {
             </p>
             <div className="flex flex-row items-center gap-3">
                 <TextInput
-                className=" bg-dark-950 p-2 px-2 rounded-lg text-dark-100 [&_input]:!text-dark-100"
+                className=" bg-dark-900 p-2 px-2 rounded-lg text-dark-100 [&_input]:!text-dark-100"
                 variant="unstyled"
                 size="lg"
                 radius="md"
@@ -21,7 +21,7 @@ const LandingPage = () => {
                 placeholder="Software Engineer"
                 />
                 <TextInput
-                className=" bg-dark-950 p-2 px-2 rounded-lg text-dark-100 [&_input]:!text-dark-100"
+                className=" bg-dark-900 p-2 px-2 rounded-lg text-dark-100 [&_input]:!text-dark-100"
                 variant="unstyled"
                 size="lg"
                 radius="md"
@@ -41,8 +41,8 @@ const LandingPage = () => {
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <div className="relative">
                 <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg" alt="mockup"/>
-                <div className="absolute -right-10 top-[50%] rounded-lg p-2 w-fit border border-mchite-400 backdrop-blur-md">
-                    <div>10k+ got job</div>
+                <div className="absolute -right-12 bottom-5 rounded-lg p-2  w-fit border border-mchite-400 backdrop-blur-md">
+                    <div className="text-dark-100 text-center px-2 mb-1">10k+ got job</div>
                     <AvatarGroup>
                         <Avatar src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-1.png"/>
                         <Avatar src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/avatars/avatar-2.png"/>
@@ -50,10 +50,27 @@ const LandingPage = () => {
                         <Avatar>+9k</Avatar>
                     </AvatarGroup>
                 </div>
+                <div className="absolute -left-12 bottom-5 rounded-lg p-2 w-fit border border-mchite-400 backdrop-blur-md">
+                    <div className="flex gap-2 items-center mb-2 ">
+                        <div className="w-10 h-10 p-1 bg-dark-900 rounded-lg">
+                            <img src="src/assets/react.svg" alt=""/>
+                        </div>
+                        <div>
+                            <div>
+                                <p className="text-dark-100 text-sm">Software Engineer</p>
+                                <p className="text-dark-200 text-xs">Manila</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex justify-between text-dark-200 text-sm">
+                        <p>1 day ago</p>
+                        <p>120 Applicants</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
   )
 }
 
-export default LandingPage
+export default FrontPage
