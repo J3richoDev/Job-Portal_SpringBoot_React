@@ -6,7 +6,7 @@ const Searchbar = () => {
   const [value, setValue] = useState<[number, number]>([20, 50]);
   return (
     <div>
-        <div className="flex justify-around my-5">
+        <div className="flex justify-around my-5 px-2">
           {
               dropdownData.map((item, index)=><>
                   <div>

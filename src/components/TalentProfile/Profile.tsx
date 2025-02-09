@@ -6,11 +6,11 @@ import CertCard from "./CertCard"
 const Profile = (props:any) => {
   return (
     <div className="w-2/3">
-        <div className="relative">
-            <img className="rounded-t-2xl" src="" alt="" />
-            <img className="w-48 h-48 rounded-full -bottom-1/3 absolute left-3" src="" alt="" />
+        <div className="relative mb-10">
+            <img className="rounded-t-2xl" src="https://picsum.photos/1000/300" alt="" />
+            <img className="w-48 h-48 rounded-full -bottom-1/3 absolute left-3 border-8 border-dark-950" src="https://picsum.photos/id/2/300/300" alt="" />
         </div>
-        <div className="px-3 mt-16">
+        <div className="px-3 mt-24">
             <div className="text-3xl font-semibold flex justify-between">
                 {props.name}
                 <Button color="mchite.4" variant="light">Message</Button>
